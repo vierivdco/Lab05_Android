@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#2196F3">
+
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="54dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="295dp"
+                    android:layout_height="155dp"
+                    android:src="@drawable/foto_perfil" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvlNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:text="Nombre:" />
+
+                    <TextView
+                        android:id="@+id/tvlCorreo"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Correo:" />
+
+                    <TextView
+                        android:id="@+id/tvlOficina"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Dirección:" />
+
+                    <TextView
+                        android:id="@+id/tvlNumero"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Celular/Tellf:" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNombre"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Vieri Cervantes" />
+
+                    <TextView
+                        android:id="@+id/tvCorreo"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="vieri.901@gmail.com" />
+
+                    <TextView
+                        android:id="@+id/tvOficina"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Ate Vitarte" />
+
+                    <TextView
+                        android:id="@+id/tvNumero"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="943870289" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="112dp"
+                android:layout_marginTop="20dp"
+                android:text="Editar"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:text="Llamar"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/button1"
+                android:text="Whatsapp"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/button2"
+                android:drawableTint="@color/white"
+                android:text="Mensaje"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
